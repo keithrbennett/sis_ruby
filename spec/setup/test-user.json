@@ -1,0 +1,6 @@
+{
+    "name" : "test",
+    "pw" : "abc123",
+    "email" : "nobody@bbs-software.com",
+    "super_user" : true
+}

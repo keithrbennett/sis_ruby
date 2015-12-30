@@ -1,0 +1,50 @@
+{
+  "entity_type": "entity_test",
+  "id_field": "_id",
+  "required_schema": {
+    "name": "entity_test",
+    "owner": "schema_owner",
+    "definition": {
+      "name": {
+        "type": "String",
+        "required": true,
+        "unique": true
+      },
+      "number": {
+        "type": "Number",
+        "unique": true,
+        "required": true
+      }
+    },
+    "_sis": {
+      "owner": "test"
+    }
+  },
+  "valid_items": [
+    {
+      "name": "entity1",
+      "number": 0
+    },
+    {
+      "name": "entity2",
+      "number": 1
+    },
+    {
+      "name": "entity3",
+      "number": 2
+    }
+  ],
+  "invalid_items": [
+    {
+      "foo": "bar"
+    },
+    {
+      "name": "entity1",
+      "number": 4
+    },
+    {
+      "name": "non_unique_num",
+      "number": 0
+    }
+  ]
+}

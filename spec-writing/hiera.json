@@ -1,0 +1,58 @@
+{
+  "type": "hiera",
+  "id_field": "name",
+  "valid_items": [
+    {
+      "name": "hiera1",
+      "owner": "hiera_owner",
+      "hieradata": {
+        "key1": "data1",
+        "key2": "data2"
+      },
+      "_sis": {
+        "owner": "test"
+      }
+    },
+    {
+      "name": "hiera2",
+      "owner": "hiera_owner",
+      "hieradata": {
+        "key3": "data1",
+        "key4": "data2"
+      },
+      "_sis": {
+        "owner": "test"
+      }
+    }
+  ],
+  "invalid_items": [
+    {
+      "name": "hiera1",
+      "owner": "hiera_owner",
+      "hieradata": {
+        "key3": "data1",
+        "key4": "data2"
+      }
+    },
+    {
+      "name": "hiera3",
+      "hieradata": {
+        "key3": "data1",
+        "key4": "data2"
+      }
+    },
+    {
+      "name": "hiera_no_data"
+    },
+    {
+      "name": "hiera_empty_data",
+      "hieradata": {
+      }
+    },
+    {
+      "hieradata": {
+        "no": "name"
+      }
+    }
+  ]
+}

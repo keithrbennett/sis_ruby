@@ -1,0 +1,64 @@
+{
+  "type": "hooks",
+  "id_field": "name",
+  "valid_items": [
+    {
+      "name": "hook1",
+      "entity_type": "some_entity",
+      "owner": "hook_owner",
+      "target": {
+        "action": "POST",
+        "url": "http=>//my.hook.endpoint/endpoint"
+      },
+      "events": [
+        "update",
+        "insert"
+      ],
+      "_sis": {
+        "owner": "test"
+      }
+    },
+    {
+      "name": "hook2",
+      "entity_type": "some_other_entity",
+      "owner": "hook_owner",
+      "target": {
+        "action": "PUT",
+        "url": "http=>//my.hook.endpoint/endpoint"
+      },
+      "events": [
+        "insert"
+      ],
+      "_sis": {
+        "owner": "test"
+      }
+    }
+  ],
+  "invalid_items": [
+    {
+      "name": "hook3",
+      "entity_type": "random",
+      "events": [
+        "update"
+      ],
+      "_sis": {
+        "owner": "test"
+      }
+    },
+    {
+      "name": "hook2",
+      "entity_type": "some_other_entity",
+      "owner": "hook_owner",
+      "target": {
+        "action": "PUT",
+        "url": "http=>//my.hook.endpoint/endpoint"
+      },
+      "events": [
+        "insert"
+      ],
+      "_sis": {
+        "owner": "test"
+      }
+    }
+  ]
+}

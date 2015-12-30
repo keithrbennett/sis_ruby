@@ -1,0 +1,131 @@
+{
+  "type": "schemas",
+  "id_field": "name",
+  "valid_items": [
+    {
+      "name": "schema1",
+      "owner": "schema_owner",
+      "definition": {
+        "requiredField": {
+          "type": "String",
+          "required": true
+        },
+        "uniqueNumberField": {
+          "type": "Number",
+          "unique": true
+        },
+        "stringField": "String",
+        "numberField": "Number",
+        "nestedDocument": {
+          "nestedString": "String",
+          "nestedBoolean": "Boolean"
+        },
+        "anythingField": {
+          "type": "Mixed"
+        }
+      },
+      "_sis": {
+        "owner": "test"
+      }
+    },
+    {
+      "name": "schema2",
+      "owner": "schema_owner",
+      "definition": {
+        "stringField": {
+          "type": "String",
+          "required": true
+        },
+        "numberField": "Number"
+      },
+      "_sis": {
+        "owner": "test"
+      }
+    }
+  ],
+  "invalid_items": [
+    {
+      "name": "schema1",
+      "owner": "schema_owner",
+      "definition": {
+        "requiredField": {
+          "type": "String",
+          "required": true
+        },
+        "uniqueNumberField": {
+          "type": "Number",
+          "unique": true
+        },
+        "stringField": "String",
+        "numberField": "Number",
+        "nestedDocument": {
+          "nestedString": "String",
+          "nestedBoolean": "Boolean"
+        },
+        "anythingField": {
+          "type": "Mixed"
+        }
+      },
+      "_sis": {
+        "owner": "test"
+      }
+    },
+    {
+      "name": "no_owner_schema",
+      "definition": {
+        "requiredField": {
+          "type": "String",
+          "required": true
+        },
+        "uniqueNumberField": {
+          "type": "Number",
+          "unique": true
+        },
+        "stringField": "String",
+        "numberField": "Number",
+        "nestedDocument": {
+          "nestedString": "String",
+          "nestedBoolean": "Boolean"
+        },
+        "anythingField": {
+          "type": "Mixed"
+        }
+      }
+    },
+    {
+      "owner": "no_name_schema",
+      "definition": {
+        "requiredField": {
+          "type": "String",
+          "required": true
+        },
+        "uniqueNumberField": {
+          "type": "Number",
+          "unique": true
+        },
+        "stringField": "String",
+        "numberField": "Number",
+        "nestedDocument": {
+          "nestedString": "String",
+          "nestedBoolean": "Boolean"
+        },
+        "anythingField": {
+          "type": "Mixed"
+        }
+      },
+      "_sis": {
+        "owner": "test"
+      }
+    },
+    {
+      "name": "bad_definition_schema",
+      "owner": "owner",
+      "definition": {
+        "whats_up": "bad_type"
+      },
+      "_sis": {
+        "owner": "test"
+      }
+    }
+  ]
+}
