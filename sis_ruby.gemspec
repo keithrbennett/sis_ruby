@@ -14,9 +14,9 @@ Gem::Specification.new do |s|
   s.license           = 'BSD 3-Clause'
 
   s.add_dependency 'awesome_print', '>= 1.6.0'
-  s.add_dependency 'rake'
   s.add_dependency 'trick_bag', '>= 0.63.1'
   s.add_dependency 'typhoeus', '>= 0.8.0'
 
+  s.add_development_dependency "rake", ">= 12.3.3"
   s.add_development_dependency 'rspec', '>= 3.0'
 end
