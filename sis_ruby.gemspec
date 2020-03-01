@@ -17,6 +17,9 @@ Gem::Specification.new do |s|
   s.add_dependency 'trick_bag', '>= 0.63.1'
   s.add_dependency 'typhoeus', '>= 0.8.0'
 
+  # Bump version as per Github security alert:
+  s.add_dependency "ffi", ">= 1.9.24"
+
   s.add_development_dependency "rake", ">= 12.3.3"
   s.add_development_dependency 'rspec', '>= 3.0'
 end

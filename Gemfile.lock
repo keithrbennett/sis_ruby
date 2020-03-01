@@ -3,22 +3,22 @@ PATH
   specs:
     sis_ruby (1.0.0)
       awesome_print (>= 1.6.0)
-      rake
+      ffi (>= 1.9.24)
       trick_bag (>= 0.63.1)
       typhoeus (>= 0.8.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    awesome_print (1.6.1)
+    awesome_print (1.8.0)
     diff-lcs (1.2.5)
-    diffy (3.1.0)
-    ethon (0.8.0)
+    diffy (3.3.0)
+    ethon (0.12.0)
       ffi (>= 1.3.0)
-    ffi (1.9.10)
-    net-ssh (2.9.2)
+    ffi (1.12.2)
+    net-ssh (5.2.0)
     os (0.9.6)
-    rake (10.4.2)
+    rake (13.0.1)
     rspec (3.4.0)
       rspec-core (~> 3.4.0)
       rspec-expectations (~> 3.4.0)
@@ -32,16 +32,20 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.4.0)
     rspec-support (3.4.1)
-    trick_bag (0.64.2)
+    trick_bag (0.69.0)
       diffy (~> 3.0)
-      net-ssh (= 2.9.2)
+      net-ssh
       os (~> 0)
-    typhoeus (0.8.0)
-      ethon (>= 0.8.0)
+    typhoeus (1.3.1)
+      ethon (>= 0.9.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  rake (>= 12.3.3)
   rspec (>= 3.0)
   sis_ruby!
+
+BUNDLED WITH
+   2.0.2
